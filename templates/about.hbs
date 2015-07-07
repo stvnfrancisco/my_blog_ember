@@ -1,0 +1,12 @@
+<h1>Blog</h1>
+
+<p></p>
+
+<button class="btn btn-primary" {{action 'smokescreen'}}>Click here to be fooled</button>
+
+{{#if isAuthorShowing}}
+  <button class="btn btn-info" {{action 'hideAuthor'}}>Hide that drunk clown :(</button>
+  <p><img src="http://cdn.breitbart.com/mediaserver/Breitbart/Big-Government/2013/10/30/drunk_clown_large.png"></p>
+{{else}}
+  <button class="btn btn-info" {{action 'showAuthor'}}>Click here to see a photo</button>
+{{/if}}
